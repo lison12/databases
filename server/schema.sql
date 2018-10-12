@@ -1,4 +1,4 @@
--- DROP DATABASE chat;
+DROP DATABASE chat;
 CREATE DATABASE chat;
 
 USE chat;
@@ -18,10 +18,10 @@ CREATE TABLE users (
 CREATE TABLE messages (
   /* Describe your table here.*/
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  roomName VARCHAR(20) NOT NULL,
-  userName VARCHAR(50) NOT NULL,
+  roomname VARCHAR(20) NOT NULL,
+  username VARCHAR(50) NOT NULL,
   -- roomID INT NOT NULL ,
-  message VARCHAR(50) NOT NULL
+  text VARCHAR(50) NOT NULL
   -- userID INT NOT NULL ,
   -- objID VARCHAR(20) NOT NULL,
   -- FOREIGN KEY (roomID) REFERENCES rooms(id),

@@ -1,5 +1,12 @@
 var models = require('../models');
 
+var headers = {
+  'access-control-allow-origin': '*',
+  'access-control-allow-methods': 'GET, POST, PUT, DELETE, OPTIONS',
+  'access-control-allow-headers': 'Authorization, Accept, X-Requested-With, X-HTTP-Method-Override, content-type',
+  'access-control-max-age': 10 // Seconds.
+};
+
 module.exports = {
   messages: {
     get: function (req, res) {
